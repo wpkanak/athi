@@ -1,0 +1,335 @@
+/*
+Theme Name: wpbstarter
+Author: Nazmul Hossain
+Author URI: https://www.linkedin.com/in/code-spider/
+Description: A starter WordPress theme Including Bootstarp 4.1.3 and FontAwesome 5.13.0. It's a standard starter theme can easily be modified for self-branding. Page templates includes Right-sidebar (default page template), Left-Sidebar, Full-Width, Blank with container, Blank without container Page. Other features - Currently using Bootstrap v4.1.3 , Widgetized footer area, WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual Composer, Compatible with Elementor Page Builder. This theme will be an active project which we will update from time to time. Check this page regularly for the updates.
+Tested up to: 5.6
+Requires PHP: 5.6
+Version: 1.1.10
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Tags: custom-menu,theme-options,threaded-comments,translation-ready,custom-background,custom-colors,custom-header,editor-style,featured-images,two-columns,blog,e-commerce,news
+Text Domain: wpbstarter
+*/
+
+
+/* Header Title */
+.menu-background {
+    background-color: #222;
+}
+
+.site-branding h1, .site-branding p {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0;
+    padding: 10px 20px;
+}
+.site-branding h1 a {
+	color: #ffffff;
+}
+/* Blog Page */
+.wpbstarter-page-title-area {
+	position: relative;
+    background-color: #333333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    background-position: center center;
+    z-index: 1;
+    margin-top: 0px;
+    color: #fff;
+}
+.wpbstarter-content-area-padding {
+    padding: 80px 0px;
+}
+.wpbstarter-blog-list {
+	display: block;
+}
+
+.wpbstarter-blog-list article, .widget-area .widget {
+    border: 1px solid #f1f1f1;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 0px 5px #f1f1f1;
+    transition: 0.4s;
+}
+
+.wpbstarter-blog-list article:hover {
+    box-shadow: 0 15px 50px #ddd;
+}
+
+.wpbstarter-blog-list a, .widget-area .widget a {
+	color: #333;
+	overflow-wrap: break-word;
+}
+
+.wpbstarter-blog-list a.wp-block-button__link {
+    color: inherit;
+}
+
+.wpbstarter-blog-list h2, .widget-area .widget h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.entry-meta > span, .entry-footer > span {
+    font-size: 80%;
+    padding-right: 15px;
+}
+
+.entry-meta > span i {
+    color: #555;
+}
+
+.entry-meta > span > a, .entry-footer > span > a {
+    font-weight: 600;
+}
+
+.entry-meta {
+    margin-bottom: 15px;
+}
+
+.entry-footer {
+    margin-top: 20px;
+}
+
+.wpbstarter-featured-content {
+    margin-bottom: 20px;
+}
+
+/* Widget */
+.widget-area .widget ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 30px;
+}
+
+.widget ul.nav li a.nav-link {
+    display: inline-block;
+}
+
+.widget-area .widget ul ul {
+    padding-left: 10px;
+}
+
+/* Widget calender Table */
+.calendar_wrap table th {
+    background-color: #f1f1f1;
+}
+
+.calendar_wrap table {
+    width: 100%;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar_wrap table th, .calendar_wrap table td {
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+/* Widget RSS */
+.widget_rss li {
+    margin-bottom: 20px;
+}
+
+.widget_rss, .widget_rss span {
+    font-size: 90%;
+    padding-left: 15px;
+}
+
+.widget-area .widget.widget_rss a {
+    font-weight: 600;
+}
+/* Widget Search */
+input[type=search] {
+    background: none;
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    color: #333;
+    font-weight: 500;
+    font-size: 12px;
+}
+input[type=submit] {
+    padding: 2px 20px;
+    background-color: #46BE25;
+    border: 1px solid #46BE25;
+    margin: -2px 0 0 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 27px;
+    cursor: pointer;
+}
+article.sticky {
+    background-color: #f4f7f8;
+}
+.sticky .entry-title::before {
+    content: '\f08d';
+    font-family: "Font Awesome\ 5 Free";
+    font-size: 1.563rem;
+    left: 0.4rem;
+    position: absolute;
+    top: 2.3rem;
+    font-weight: 900;
+}
+h2.entry-title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eaecef;
+}
+.blog-entry-meta {
+    margin-top: 30px;
+    font-size: 80%;
+}
+
+.blog-entry-meta span {
+    padding-right: 20px;
+}
+
+.blog-entry-meta span i {
+    color: #eee;
+}
+
+.wp-block-embed {
+	overflow-x: auto;
+}
+
+/* Blog single calender Table */
+.entry-title {
+    overflow-wrap: break-word;
+}
+.entry-content table th {
+    background-color: #f1f1f1;
+}
+
+.entry-content table {
+    width: 100%;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.entry-content table th, .entry-content table td {
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Blog single normal table */
+.entry-content table {
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.entry-content table th, .entry-content table td {
+	padding: 10px;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+.entry-content table thead th {
+	background-color: #ddd;
+}
+/* Definition and UL OL list */
+.entry-content dd {
+	margin-bottom: 20px;
+}
+.ulol ul, .ulol ol {
+	padding-left: 15px;
+}
+/* Comment Area normal table */
+ul.children {
+    list-style: none;
+}
+
+.comments-area {
+    padding: 40px 0;
+}
+
+.comment-body {
+    padding: 5px 0;
+}
+
+h2.comments-title {
+    background-color: #46be25;
+    padding: 10px;
+    color: #fff;
+}
+
+.comments-area p.no-comments {
+    padding: 10px;
+    font-weight: 700;
+    background-color: #e21b48;
+    color: #fff;
+    display: block;
+}
+
+.comments-area table {
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.comments-area table th, .comments-area table td {
+	padding: 10px;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+.comments-area table thead th {
+	background-color: #ddd;
+}
+/* Definition and UL OL list */
+.comments-area dd {
+	margin-bottom: 20px;
+}
+.comments-area ul.comment-list, .comments-area ol.comment-list {
+	padding-left: 15px;
+	list-style: none;
+}
+/* address tag */
+address {
+	font-style: italic;
+}
+/* Single Blog nav */
+.nav-links {
+	overflow-wrap: break-word;
+	word-break: break-all;
+	margin-top: 50px;
+}
+.nav-links a{
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	padding: 5px 10px;
+}
+.nav-previous, .nav-next{
+	max-width: 50%;
+}
+.nav-previous {
+	float: left;
+}
+.nav-next {
+	text-align: right;
+}
+.nav-link {
+    padding: .3rem 1rem;
+}
+/* Page Links pagination */ 
+.page-links a {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+}
+/* Comment form */
+.comment-form input, .comment-form textarea {
+    max-width: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+}
+
+.comment-form input[type=submit] {
+    width: auto;
+    background-color: #333;
+    border-radius: 5px;
+}
